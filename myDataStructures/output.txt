@@ -1,0 +1,6 @@
+string deleted!!!
+string abc frequency: 0
+string doesn't exist!!!
+string abc frequency: 0
+successful insertion!!!
+string abc frequency: 1

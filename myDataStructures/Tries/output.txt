@@ -1,0 +1,4 @@
+string abc frequency: 1
+string ab frequency: 0
+string abcdzz frequency: 0
+string a prefix is present.

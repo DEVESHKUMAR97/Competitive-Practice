@@ -1,0 +1,1 @@
+{"group":"local","interactive":false,"local":true,"memoryLimit":1024,"name":"Local: test","srcPath":"c:\\Users\\DEVESH KUMAR\\Documents\\Competitive Practice\\vs_code\\test.cpp","tests":[{"id":1600114110656,"input":"0 1\n5353 319104 794949\n0 0","output":"true"}],"timeLimit":3000,"url":"c:\\Users\\DEVESH KUMAR\\Documents\\Competitive Practice\\vs_code\\test.cpp"}

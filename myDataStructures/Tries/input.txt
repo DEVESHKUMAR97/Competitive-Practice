@@ -1,0 +1,8 @@
+2
+abc
+xyz
+4
+2 abc
+2 ab
+2 abcdzz
+5 a

@@ -1,0 +1,51 @@
+The Structure of the Problem resembles the Graph structure where each accessible area in the grid can be treated as a valid node in the graph.
+
+We can use Breadth-First Search(BFS) algorithm to find the minimum distance from source to destination.
+
+1. We can treat the source, destination, and all cells which contain 1, as a valid node in the graph and initially mark them as unvisited in the graph by using a visited matrix of boolean.
+
+2. We will push the source node in the queue and mark it as visited.
+3. Then, We will explore all the Valid and unvisited children of the current front node in the queue and insert them in the queue as well, to explore their children as well in the next level.
+
+4. I will keep the count of levels explored by counting the numbers of nodes left at the current level and number of nodes present at the next level.
+
+5. Whenever we will reach the destination node, we will return the distance by using levelCount. and if we will never encounter the destination node then we will return -1.
+
+
+
+
+
+
+
+
+
+
+Run Time Complexity: O(rows * cols) where rows = number of rows in area grid, and cols = number of columns in area grid
+
+Space Complexity: O(rows * cols)
+
+
+Approach:
+
+Since we are merging two files at a time in each step. So, we have to select those two files which have minimum sizes, to get minimum merging time at each step.
+After selecting two small files, we will merge them and add their merging cost to the totalTime(answer of the problem) and also store the merged size back with the remaining sizes.
+
+We can use sorting here at each step to get first two minimum elements in the array But this will increase the time complexity. Since we will be doing the sorting for the entire array at each step to just get the first two minimum elements.
+
+So, for a better solution, we can use a min priority queue, 
+1. First we will store all the elements in the min priority queue.
+
+2. Secondly, we will do merging until only one file is remaining. At each step, we will fetch the first two small elements from the priority queue, then merge them and add their merging cost to totalTime, also push merged size back to the priority queue.
+
+3. return the totalTime as the answer to the problem
+
+
+
+Run Time Complexity = O(nlog(n)) where n is the number of subfiles to be merged
+
+Extra Space Complexity = O(n) since I have used min priority queue to store the sizes
+
+
+
+Nice Experience.
+Especially, I really like the code explanation section, where I have to explain my solution, in this way, I was able to express my thought process as well.
